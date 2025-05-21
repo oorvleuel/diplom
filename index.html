@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проверка текста</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="app.js" as="script">
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Проверка текста на ошибки</h1>
+    <textarea id="textInput" placeholder="Введите текст или загрузите файл..."></textarea>
+    <input type="file" id="fileInput" accept=".txt,.doc,.docx">
+    <button id="checkButton">Проверить</button>
+    <div id="result"></div>
+  </div>
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
